@@ -1,0 +1,17 @@
+body {
+	background-color:#0099ff;
+}
+.container {
+	background-color:#c0c0c0;
+	height:1200px;
+	width:800px;
+	margin:auto;
+	text-align:center;
+}
+
+h1 {	
+	padding-top: 30px;
+	font-family:Courier;
+	color:brown;
+	font-size:3em;
+}

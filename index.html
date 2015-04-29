@@ -6,13 +6,25 @@
       window.onload = function(){
         // ALL OF YOUR JAVASCRIPT CODE SHOULD GO HERE. 
         // We have to use window.onload so your JavaScript doesn't execute until the page has loaded and all HTML has been downloaded to your browser
+
+        //for loop to loop through the window.geemails array
+        for (var i=0; i<window.geemails.length; i++) {
+        	console.log("Subject: " + window.geemails[i].subject + "\tSender: " + window.geemails[i].sender + "\tDate: " + window.geemails[i].date);
+        }
+        //inbox count
+        console.log("Inbox count\nYou have " + window.geemails.length + " messages");
         
+        //setInterval function that calls getNewMessage function
+        setInterval(getNewMessage(); 5000);
       };
+   
     </script>
+    <title>Gee-Mail</title>
 	</head>
 	<body>
 		<div class="container" id="main">
-			Build Me!
+			<h1>Gee-Mail</h1>
+			<hr>
 		</div>
 	</body>
 </html>
